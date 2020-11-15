@@ -95,6 +95,7 @@
    | ypu_province | VARCHAR(16) | |
    | ypu_city | VARCHAR(16) | | 
    | ypu_profession | VARCHAR(16) | |
+   | ypu_photo | TEXT | |
 
    * yandbox_platform_user_follow (MyISAM) (暂定，无功能界面)
 
