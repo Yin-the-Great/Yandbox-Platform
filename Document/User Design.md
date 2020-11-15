@@ -82,8 +82,8 @@
       
    | 名称 | 类型 | 特性 |
    | :---: | :---: | :---: |
-   | ypu_id_no | INT/MEDIUMINT | primary |
-   | ypu_id | VARCHAR(32) | unique, auto_increment |
+   | ypu_id_no | INT/MEDIUMINT | primary, auto_incremen |
+   | ypu_id | VARCHAR(32) | uniquet |
    | ypu_password | VARCHAR(32) | |
    | ypu_mail | VARCHAR(64) | unique |
    | ypu_phone | VARCHAR(16) | unique |
