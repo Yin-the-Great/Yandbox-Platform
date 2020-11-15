@@ -18,10 +18,12 @@
                - 正在进行
                - 等待更新
                - 等待验收
+      3. 任务详情
+         查看任务的详细信息
    2. 发布任务
    3. 领取、放弃任务
    4. 任务进度更新
-      1. 记录完成情况（仅领取者）
+      1. 记录完成情况，通过记录日志实现（仅领取者，更新进度消息表）
       2. 修改任务信息
          1. 修改任务要求（仅发布者）
          2. 更新任务状态
@@ -35,10 +37,7 @@
             | 待更新 | 领取者需要更详细的任务说明 |
 
 2. 界面
-    1. 待领取任务界面
-    2. 已领取任务界面
-    3. 发布的任务界面
-    4. 已完成任务界面（归档）
+    notification（后续更新）
 
 3. 数据库  
     yandbox_platform_task (MyISAM)
@@ -47,16 +46,22 @@
    | ypt_id | INT/MEDIUMINT | 主键、任务ID | unique, auto_increment, primary |
    | ypt_name | VARCHAR(64) | 任务名称 |  |
    | ypt_project | VARCHAR(64) | 任务所属项目名 |  |
-   | ypt_status | INT | 任务状态 |  |
-   | ypt_tech_stack | VARCHAR(1024) | 任务所需技术栈 |  |
+   | ypt_status | TINYINT | 任务状态 |  |
+   | ypt_tech_stack | VARCHAR(256) | 任务所需技术栈 |  |
    | ypt_description | VARCHAR(4096) | 任务详细描述 |  |
-   | ypt_track | VARCHAR(4096) | 任务进度 |  |
+   | ypt_track | TINYINT | 任务进度 |  |
    | ypt_publisher | VARCHAR(32) | 发布者用户ID |  |
    | ypt_acceptor | VARCHAR(32) | 领取者用户ID |  |
    | ypt_create_time | DATE | 任务发布时间 |  |
    | ypt_last_update_time | DATE | 任务最后修改时间 |  |
 
 4. 待讨论
-   - 是否需要其他表对任务更新情况进行记录？
-   - 是否需要项目表？
-   - 发布任务的接口放在哪个页面下？如果有项目表推荐放在项目页面中。
+
+5. 修改内容
+   - 增加任务既定完成时间
+   - 增加任务历史记录表
+   - 增加任务前继关系属性
+   - 增加进度消息表
+   - 领取人历史（暂定json）
+   - 任务进度条，由任务发布者管理
+   - 增加提醒表
