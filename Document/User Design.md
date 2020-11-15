@@ -43,7 +43,7 @@
         4. 用户选择头像或自定义头像  
         > * 若是自定义头像，将头像上传到用户文件夹头像文件夹下  
         > * 用户自定义头像上限为5，为5以上时删除文件夹下较旧的头像
-        1. 系统修改数据库表项   
+        5. 系统修改数据库表项   
     
     5. 修改用户密码  
     用户操作信息：密码  
@@ -82,8 +82,8 @@
       
    | 名称 | 类型 | 特性 |
    | :---: | :---: | :---: |
-   | ypu_id_no | INT/MEDIUMINT | primary, auto_incremen |
-   | ypu_id | VARCHAR(32) | uniquet |
+   | ypu_id_no | INT/MEDIUMINT | primary, auto_increment |
+   | ypu_id | VARCHAR(32) | unique |
    | ypu_password | VARCHAR(32) | |
    | ypu_mail | VARCHAR(64) | unique |
    | ypu_phone | VARCHAR(16) | unique |
