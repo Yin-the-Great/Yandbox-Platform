@@ -82,20 +82,20 @@
       
    | 名称 | 类型 | 特性 |
    | :---: | :---: | :---: |
-   | ypu_id_no | INT/MEDIUMINT | primary, auto_increment |
-   | ypu_id | VARCHAR(32) | unique |
-   | ypu_password | VARCHAR(32) | |
-   | ypu_mail | VARCHAR(64) | unique |
-   | ypu_phone | VARCHAR(16) | unique |
-   | ypu_name | VARCHAR(32) | |
-   | ypu_signature | VARCHAR(4096) | |
-   | ypu_sex | CHAR(1) | |
-   | ypu_birthday | DATE | |
-   | ypu_country | VARCHAR(16) | |
-   | ypu_province | VARCHAR(16) | |
-   | ypu_city | VARCHAR(16) | | 
-   | ypu_profession | VARCHAR(16) | |
-   | ypu_photo | TEXT | |
+   | ypu_id_no | INT | primary, not null, auto_increment |
+   | ypu_id | VARCHAR(32) | unique, not null, check(4<=len<=32) |
+   | ypu_mail | VARCHAR(64) | unique, not null, default '' |
+   | ypu_password | VARCHAR(32) | not null, check(6<=len<=32) |
+   | ypu_phone | VARCHAR(16) | not null, default '' |
+   | ypu_name | VARCHAR(32) | not null, default '' |
+   | ypu_signature | VARCHAR(4096) | not null, default '' |
+   | ypu_sex | CHAR(1) | not null, default '' |
+   | ypu_birthday | DATE | not null, default '1900-01-01' |
+   | ypu_country | VARCHAR(16) | not null, default '' |
+   | ypu_province | VARCHAR(16) | not null, default '' |
+   | ypu_city | VARCHAR(16) | not null, default '' | 
+   | ypu_profession | VARCHAR(16) | not null, default '' |
+   | ypu_photo | JSON | |
 
    * yandbox_platform_user_follow (MyISAM) (暂定，无功能界面)
 
