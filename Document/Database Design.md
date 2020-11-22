@@ -18,7 +18,7 @@
 3. 角色  
    | 角色 | 主机 | 权限 | 
    | :---: | :---: | :---: |
-   | my_admin_role | % | yandbox_platform_database的所有权限| 
+   | myp_admin_role | % | yandbox_platform_database的所有权限| 
 
 4. 表
    1. yandbox_platform_user (MyISAM)
