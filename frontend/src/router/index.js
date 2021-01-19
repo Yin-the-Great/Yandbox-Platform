@@ -8,11 +8,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: () => import('../views/Home.vue'),
-    chindren: [
+    children: [
       {
         path: '',
         name: 'Index',
-        component: () => import('../views/About.vue'),
+        component: () => import('../views/Index.vue'),
       },
     ],
   },
