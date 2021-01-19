@@ -1,6 +1,6 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="aside">
+    <h1>This is the Sidebar</h1>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   data() {
     return {
-      name: 'about',
+      name: 'aside',
     };
   },
 };
