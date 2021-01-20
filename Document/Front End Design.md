@@ -6,8 +6,8 @@
    | :---: |
    | Vue |
    
->> vue version 4.5.9
->> vue-cli 3.x
+> vue version 4.5.9  
+> vue-cli 3.x
 
    | 主机端 UI | 移动端 UI |
    | :---: | :---: |
