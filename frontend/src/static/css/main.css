@@ -13,6 +13,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-button {
+  display: none;
+}
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-corner {
+  background: #eee;
+}
+::-webkit-scrollbar-resizer  {
+  background: #eee;
+}
 /* aside */
 .aside {
   display: block;
@@ -21,7 +41,8 @@
   left: 0;
   top: 70px;
   bottom: 0;
-  background: #2e363f;
+  background: #eee;
+  overflow-y: scroll;
 }
 .aside > ul {
   height: 100%;
@@ -32,6 +53,5 @@
 
 /* header */
 .el-header {
-  padding: 0;
-  background: #6ba760;
+  padding: 0 !important;
 }
