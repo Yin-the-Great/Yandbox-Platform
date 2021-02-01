@@ -55,3 +55,24 @@
 .el-header {
   padding: 0 !important;
 }
+
+/* button */
+.button-green {
+  background-color: #6ba760 !important;
+  border-color:#6ba760 !important;
+}
+
+/* crumb */
+.crumbs {
+  margin-bottom: 20px;
+}
+
+/* pagination */
+.pagination {
+  margin: 20px 0;
+  text-align: right;
+}
+.plugins-tips {
+  padding: 20px 10px;
+  margin-bottom: 20px;
+}
